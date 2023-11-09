@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&family=Raleway:wght@500&display=swap');
+@import "~@flaticon/flaticon-uicons/css/all/all";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+}
+header{
+    width: 100%;
+    height: 120px;
+    background: rgb(84, 132, 247, 0.5);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+}
+
+
+.nav_links{
+    font-size: 25px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-weight: 400;
+    
+}
+.nav_link>.active_site{
+    color:gold;
+}
+.nav_link>a{
+    text-decoration: none;
+    color: #fff;
+}
+.hero_bg{
+    width: 100%;
+    height: 720px;
+    background: -webkit-linear-gradient(123deg, #2388c7,#6220fe,#29438e);                         
+    background: linear-gradient(123deg, #2388c7,#6220fe,#29438e);                                      
+}
+.hero_area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index:1;
+}
+.hero_txt{
+    width: 600px;
+    background-color: #00000010;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 13px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 25px;
+}
+.hero_txt>p{
+     font-size: 44px;
+    font-weight: 600;
+}
+.journal_img{
+    position: relative;
+    width: 300px;
+}
+.journal_img>img{
+    width: 250px;
+    -webkit-box-shadow: 2px 83px 70px 17px rgba(80,  101,  153, 0.93);
+    -moz-box-shadow: 2px 83px 70px 17px rgba(80,  101,  153, 0.93);
+    box-shadow: 2px 83px 70px 17px rgba(80,  101,  153, 0.93);
+    animation: j_bounce 2s infinite;  /* Имя анимации, длительность и бесконечное повторение */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+   
+}
+@keyframes j_bounce{
+    0%, 100% {
+        transform: translateY(0); /* Начальное и конечное положение */
+    }
+    50% {
+        transform: translateY(-20px); /* Положение после прыжка вверх */
+    }
+    
+}
+.linkAll {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+      padding: 0 .25rem;
+      margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .linkAll:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;;
+  }
+  
+  /* Presentational styles */
+  .linkAll {
+      color: gold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+      font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+ .my_card{
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    border-radius: 10px;
+    
+}
+ .card_img{
+    background-image: url('http://elagartuu.site.kg/wp-content/uploads/2023/01/El_agartuu_side-211x300.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 700px;
+    margin-top: 3%;
+} 
+.profile_card{
+    text-align: center;
+    border: 1px solid #29438e;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.4s, color 0.8s;
+
+}
+.profile_img{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    border-radius: 50%;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/03/53/11/00/1000_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg');
+}
+.profile_card:hover{
+    background: #3498db;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+
+}
+.contact_blog{
+    background-color: #3498db;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    color: #fff;
+    padding: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    background: #29438e;
+    height: 20vh;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.logo_footer{
+    background-image: url('imgs/sovetskij-orden-znak-pocheta-5.655x459-removebg-preview.png');
+    width: 13vw;
+    height: 13vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer_info{
+    width: 40vw;
+    color: #fff;
+}
+.footer_title{
+    color: #fff;
+}
+footer>hr{
+    width: 50%; 
+    margin: 0 25% 0 25%;
+    color: #fff;
+}
+footer>p{
+    color: #fff;
+    text-align: center;
+}
+
+/* Archive style */
+
+.archive_card{
+    width: 20vw;
+    background: #3498db;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.archive_img{
+
+    width:20vw;
+    background-repeat: no-repeat;
+    height:60vh;
+    background-size: contain;
+}
+.archive_img_blog{
+    width:20vw;
+    height:60vh;
+}
+.archive_title{
+    font-size: 24px;
+}
+.history_blog{
+    font-size: 1.4em;
+}
+p>i{
+    color: #3498db;
+}
+.author_ol>li{
+    font-size: 1.2em;
+    padding: 5px;
+
+}
+.btnBurger{
+    width: 12vw;
+    height: 5vh;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+  /* Медиазапрос для адаптивности */
+  @media screen and (max-width: 768px) {
+        .journal_img{
+            display: none;
+        }
+        .my_card{
+            height: 55vh;
+            display: flex;
+            align-items: flex-start;
+        }
+        .my_card>.card_img{
+            width: 270px;
+            margin:30px auto;
+        }
+        .my_card>.card_txt{
+            margin-top: 20vh;
+        }
+        .archive_card{
+            width: 90vw;
+            margin: 0 auto;
+        }
+        .archive_img_blog{
+            width: 90vw;
+            text-align: center;
+
+        }
+        .our_contacts>p{
+            font-size: 1.7em;
+        }
+        .our_contacts{
+            margin-bottom: 30px;
+        }
+        .nav_links{
+            display: block;
+        }
+        .mob_menu{
+            background: -webkit-linear-gradient(123deg, #2388c7,#6220fe,#29438e);                         
+            background: linear-gradient(123deg, #2388c7,#6220fe,#29438e);   
+                                         
+        }
+        .lg_menu{
+            display: none;
+        }
+        header{
+            background: none;
+        }
+      
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+   .btnBurger{
+    display: none;
+   }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .btnBurger{
+        display: none;
+       }
+  }

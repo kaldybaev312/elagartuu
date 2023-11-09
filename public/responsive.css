@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .hero_txt{
+        width: 80%;
+        font-size: 0.5em;
+    }
+    .journal_img{
+        display: none;
+    }
+    .my_card{
+        flex-wrap: wrap;
+
+    }
+    .crad_txtt{
+        
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Стили для планшетов */
+  }
+  
+  @media screen and (min-width: 1025px) {
+    /* Стили для ноутбуков и больших экранов */
+  }
