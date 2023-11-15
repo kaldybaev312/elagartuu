@@ -61,7 +61,7 @@ header{
     z-index: 1;
     padding: 25px;
 }
-.hero_txt>p{
+.hero_txt>.elagart{
      font-size: 44px;
     font-weight: 600;
 }
@@ -231,10 +231,19 @@ footer>p{
 p>i{
     color: #3498db;
 }
+.head_reader{
+    font-size: 14px;
+}
 .author_ol>li{
     font-size: 1.2em;
     padding: 5px;
 
+}
+.contacts_info{
+    text-decoration: none;
+    font-size: 24px;
+    color:#fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .btnBurger{
     width: 12vw;
