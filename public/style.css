@@ -252,6 +252,17 @@ p>i{
     margin-top: 10px;
     margin-left: 10px;
 }
+.new_link>input, .new_name>input{
+    height: 50px;
+}
+.form_style{
+    margin-top: 40px;
+    border:3px solid #29438e ;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
 
   /* Медиазапрос для адаптивности */
   @media screen and (max-width: 768px) {

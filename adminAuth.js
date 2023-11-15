@@ -2,7 +2,7 @@ const passport = require('passport');
 const { BasicStrategy } = require('passport-http');
 
 const users = [
-  { username: 'admin', password: 'kaldybaev' },
+  { username: 'admin', password: 'elagartuu_kg2023' },
   { username: 'elagartuu', passsword: '0000'},
   
   // Другие пользователи, если необходимо

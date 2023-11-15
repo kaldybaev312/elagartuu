@@ -15,7 +15,7 @@
     <title>Admin Panel</title>
 </head>
 <body>
-    <header>
+     <header>
         <div class="container">
             <ul class="nav_links lg_menu">
                 <li class="nav_link"><a href="/">Главное</a></li>
@@ -33,31 +33,44 @@
             <div class="collapse collapse-horizontal" id="collapseWidthExample">
               <div class="card card-body mob_menu" style="width: 400px;">
                 <ul class="nav_links">
-                    <li class="nav_link"><a href="/">Главное</a></li>
+                    <li class="nav_link"><a class="active_site" href="/">Главное</a></li>
                     <li class="nav_link"><a href="/about">О Журнале</a></li>
                     <li class="nav_link"><a href="/archive">Архив</a></li>
                     <li class="nav_link"><a href="/contacts">Контакты</a></li>
-                    <li class="nav_link"><a href="/author">Автором</a></li>
+                    <li class="nav_link"><a  href="/author">Автором</a></li>
     
                 </ul>
               </div>
             </div>
           </div>
     </header>
+
+    <div class="hero_area hero_bg" >
+      <div class="hero_txt ">
+          <p class="h2">Админ Панель</p>
+          <a href="/" class="linkAll">Главное</a>
+      </div>
+      <div class="journal_img ">
+          <img class="anim" src="imgs/El_agartuu_side-211x300.png" alt="">
+      </div>
+  </div>
+
     <div class="container form_blog">
     
       <form method="post" class="admin_form">
-          <h1 >Публикация журнала</h1>
-          <label for="imageUrl">URL изображения:</label>
-          <input type="text" name="imageUrl" id="imageUrl" required class="form-control" placeholder="Ссылка на обложку">
-          <br>
+          <h1 class="mt-5">Публикация журнала</h1>
+          <div class="row form_style">
+            <div class="new_name col-sm-6">
           <label for="title">Заголовок:</label>
           <input type="text" name="title" id="title" required class="form-control" placeholder="Введите название">
-          <br>
+        </div>
+        <div class="new_link col-sm-6">
           <label for="link">Ссылка:</label>
-          <input type="text" name="link" id="link" required class="form-control" placeholder="Введите ссылку на журнал">
+          <input type="text" name="link" id="link" required class="form-control" placeholder="Введите ссылку на журнал"> 
+        </div>
           <br>
-          <button type="submit"  class="btn btn-primary">Опубликовать</button>
+          <button type="submit"  class="btn btn-primary col-sm-2 mt-3 p-2">Опубликовать</button>
+        </div>
       </form>
       </div>
 </body>
